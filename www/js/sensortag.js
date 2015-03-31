@@ -39,7 +39,7 @@ function scanSuccess(peripheral) {
 
     if (peripheral.id === '4CBB55B7-1EE6-B45F-2DB9-76D37B464325') {
     // if (String(peripheral.name).match(/sensor/i)) {
-        // ble.stopScan(stopScanSuccess, stopScanFailure);
+        ble.stopScan(stopScanSuccess, stopScanFailure);
         console.log('id: ' + peripheral.id);
         console.log('name: ' + peripheral.name);
 
